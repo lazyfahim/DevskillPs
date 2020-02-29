@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "SiteCheker": {
+      "commandName": "Project",
+      "commandLineArgs": "--install",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
