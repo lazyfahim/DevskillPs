@@ -17,6 +17,11 @@ namespace DevSkill.Web.Areas.Admin.Controllers
             return View();
         }
 
+        public ActionResult Tables()
+        {
+            return View();
+        }
+
         // GET: Dashboard/Details/5
         public ActionResult Details(int id)
         {

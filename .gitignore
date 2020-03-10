@@ -51,3 +51,16 @@ project.lock.json
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
+/DCP 12/obj
+/DCP8/obj
+/DCP2/obj
+/DCP13/obj
+/DCP1/obj
+/DCP 7/obj
+/DCP 4/obj
+/DevSkill.Web/DAL/obj
+/DevSkill.Web/DataPrac/bin/Debug/netcoreapp3.0
+/DevSkill.Web/DataPrac/obj
+/DevSkill.Web/Models/obj
+/DevSkill.Web/Devskill.ldf
+/DevSkill.Web/Devskill.mdf
