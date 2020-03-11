@@ -12,14 +12,19 @@ namespace DevSkill.Web.Areas.Admin.Controllers
     public class DashboardController : Controller
     {
         // GET: Dashboard
-        public ActionResult Index()
+        public IActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Tables()
+        public IActionResult Tables()
         {
             return View();
+        }
+
+        public IActionResult GetProductData()
+        {
+            return Json();
         }
 
         // GET: Dashboard/Details/5

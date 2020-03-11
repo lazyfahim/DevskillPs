@@ -23,4 +23,9 @@
     <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj" />
+  </ItemGroup>
+
 </Project>

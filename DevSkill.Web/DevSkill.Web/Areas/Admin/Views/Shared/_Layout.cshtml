@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="~/admin/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    @RenderSection("Styles", required: false)
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
     <div class="wrapper">
@@ -704,9 +705,9 @@
                 </div><!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
-        <!-- Main content -->
-        @RenderBody()
-           
+            <!-- Main content -->
+            @RenderBody()
+
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
@@ -724,6 +725,7 @@
             </div>
         </footer>
     </div>
+
     <!-- ./wrapper -->
     <!-- REQUIRED SCRIPTS -->
     <!-- jQuery -->
@@ -749,5 +751,6 @@
 
     <!-- PAGE SCRIPTS -->
     <script src="~/admin/js/pages/dashboard2.js"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
