@@ -29,11 +29,17 @@ namespace DAL
                 var properties = itemType.GetProperties();
                 foreach(var property in properties)
                 {
-                    property.SetValue(instance, reader[property.Name]);
+                    property.SetValue(instance, Convert.ChangeType(reader[property.Name],property.PropertyType));
                 }
                 result.Add((T)instance);
             }
             return result;
+        }
+        public T GetScalar(string sql)
+        {
+            var command = new SqlCommand(sql, _sqlConnection);
+            T res = (T)command.ExecuteScalar();
+            return T;
         }
         public void Dispose()
         {

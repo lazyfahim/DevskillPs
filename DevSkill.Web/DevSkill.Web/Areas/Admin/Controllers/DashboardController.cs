@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DevSkill.Web.Areas.Admin.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace DevSkill.Web.Areas.Admin.Controllers
 {
@@ -11,6 +13,11 @@ namespace DevSkill.Web.Areas.Admin.Controllers
     [Route("Admin/[controller]/[action]")]
     public class DashboardController : Controller
     {
+        private readonly IConfiguration _configuration;
+        public DashboardController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
         // GET: Dashboard
         public IActionResult Index()
         {
@@ -22,9 +29,12 @@ namespace DevSkill.Web.Areas.Admin.Controllers
             return View();
         }
 
-        public IActionResult GetProductData()
+        public IActionResult GetProductData([FromQuery(Name = "search[value]")] string searchText, int draw,int start =1,int length=2)
         {
-            return Json();
+           // IConfiguration config;
+            var model = new ProductModel(this._configuration);
+            var data = model.GetProducts(searchText, draw, start, length);
+            return Json(data);
         }
 
         // GET: Dashboard/Details/5
