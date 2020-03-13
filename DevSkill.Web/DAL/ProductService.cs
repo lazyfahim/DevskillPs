@@ -17,28 +17,19 @@ namespace DAL
         }
 
         public (IList<Product> products,int total, int totalDisplay) GetProducts(int pageIndex,
-            int pageSize, string searchText = "", string sortText="")
+            int pageSize, string searchText = "null", string sortText="null")
         {
+            if (sortText == null)
+                sortText = "Id";
             using var dbProvider = new SqlDataProvider<Product>(_connectionString);
-            string sql = "select * from product";
-            if(searchText != null)
-            {
-                sql += $"where Id = {searchText} or Name = {searchText} or Description = {searchText} or Price = {searchText}";
-            }
-            sql += $"order by Id asc OFFSET {(pageSize)*(pageIndex-1)}" +
-                $" rows fetch next {pageSize} rows only";
-            this._products = dbProvider.GetData(sql);
-            IEnumerable<Product> filteredProducts;
-            if (searchText != null)
-            {
-                filteredProducts = _products.Where(x => x.Name.Contains(searchText,StringComparison.CurrentCultureIgnoreCase));
-            }
-            else
-                filteredProducts = _products;
-            var totalProducts = dbProvider.GetScalar();
-            var totalFltrd = filteredProducts.Count();
-            var filteredProductsList = filteredProducts.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
-            return (filteredProductsList, totalProducts, totalFltrd);
+            string sql = $"declare @cnt int; exec [spGetProduct] {pageIndex}, {pageSize},'{sortText}','{searchText}', @cnt output;" +
+                         $"select @cnt as cnt";
+            int  totalFltrd = 0;
+
+            (this._products,totalFltrd) = dbProvider.GetData(sql);
+            IEnumerable<Product> filteredProducts = searchText != null ? _products.Where(x => x.Name.Contains(searchText,StringComparison.CurrentCultureIgnoreCase)) : _products;
+            var totalProducts = dbProvider.GetTotal("Product");
+            return (_products, totalProducts, totalFltrd);
         }
     }
 }

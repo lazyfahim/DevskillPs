@@ -29,7 +29,7 @@ namespace DevSkill.Web.Areas.Admin.Controllers
             return View();
         }
 
-        public IActionResult GetProductData([FromQuery(Name = "search[value]")] string searchText, int draw,int start =1,int length=2)
+        public IActionResult GetProductData([FromQuery(Name = "search[value]")] string searchText, int draw,int start =0,int length=10)
         {
            // IConfiguration config;
             var model = new ProductModel(this._configuration);

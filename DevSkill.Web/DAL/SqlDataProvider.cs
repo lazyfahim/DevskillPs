@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 
@@ -16,10 +17,12 @@ namespace DAL
 
         }
 
-        public List<T> GetData(string sql)
+        public (List<T>,int) GetData(string sql)
         {
             var result = new List<T>();
             var command = new SqlCommand(sql, _sqlConnection);
+            //command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.Add("@filteredCount",SqlDbType.Int).Direction = ParameterDirection.Output;
             var reader = command.ExecuteReader();
             while (reader.Read())
             {
@@ -33,13 +36,18 @@ namespace DAL
                 }
                 result.Add((T)instance);
             }
-            return result;
+
+            reader.NextResult();
+            int cnt=0;
+            while (reader.Read())
+                cnt = (int) reader["cnt"];
+            return (result,cnt);
         }
-        public T GetScalar(string sql)
+        public int GetTotal(string tablename)
         {
-            var command = new SqlCommand(sql, _sqlConnection);
-            T res = (T)command.ExecuteScalar();
-            return T;
+            var command = new SqlCommand($"select count(Id) from {tablename} ", _sqlConnection);
+            int res = (int)command.ExecuteScalar();
+            return res;
         }
         public void Dispose()
         {
