@@ -29,11 +29,31 @@ namespace DevSkill.Web.Areas.Admin.Controllers
             return View();
         }
 
-        public IActionResult GetProductData([FromQuery(Name = "search[value]")] string searchText, int draw,int start =0,int length=10)
+        public IActionResult GetProductData([FromQuery(Name = "search[value]")] string searchText,[FromQuery(Name = "order[0][column]")] int sortCol
+            ,[FromQuery(Name = "order[0][dir]")] string sortDir, int draw,int start =0,int length=10)
         {
-           // IConfiguration config;
+            string colName = "Id";
+            switch (sortCol)
+            {
+                case 0:
+                    colName = "Id";
+                    break;
+                case 1:
+                    colName = "Name";
+                    break;
+                case 2:
+                    colName = "Description";
+                    break;
+                case 3:
+                    colName = "Price";
+                    break;
+                default:
+                    colName = "Id";
+                    break;
+            }
+            // IConfiguration config;
             var model = new ProductModel(this._configuration);
-            var data = model.GetProducts(searchText, draw, start, length);
+            var data = model.GetProducts(searchText, draw, start, length,colName);
             return Json(data);
         }
 

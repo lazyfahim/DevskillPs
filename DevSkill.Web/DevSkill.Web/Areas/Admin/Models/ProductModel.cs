@@ -15,9 +15,9 @@ namespace DevSkill.Web.Areas.Admin.Models
             _productService = new ProductService(configuration.GetConnectionString("DefaultConnection"));
         }
 
-        public object GetProducts(string searchText,int draw,int start,int length)
+        public object GetProducts(string searchText,int draw,int start,int length,string sorttext)
         {
-            var data = _productService.GetProducts(start, length,searchText,null);
+            var data = _productService.GetProducts(start, length,searchText,sorttext);
             return new
             {
                 recordsTotal = data.total,
