@@ -19,5 +19,11 @@ namespace School.Services
         {
             return _schoolUnitOfWork.StudentRepository.Get().ToList();
         }
+
+        public void AddStudent(Student student)
+        {
+            _schoolUnitOfWork.StudentRepository.Add(student);
+            _schoolUnitOfWork.Save();
+        }
     }
 }

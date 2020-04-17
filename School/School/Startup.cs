@@ -33,7 +33,7 @@ namespace School
 
         public IConfigurationRoot Configuration { get; private set; }
 
-        public ILifetimeScope AutofacContainer { get; private set; }
+        public static ILifetimeScope AutofacContainer { get; private set; }
 
         public void ConfigureContainer(ContainerBuilder builder)
         {

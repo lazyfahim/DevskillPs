@@ -28,6 +28,11 @@ namespace School.Controllers
             return View();
         }
 
+        public IActionResult AddStudent()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
