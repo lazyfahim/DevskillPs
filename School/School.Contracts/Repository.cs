@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 
-namespace School.Data
+namespace School.Contracts
 {
     public abstract class Repository<T> :  IRepository<T> where T : class
     {

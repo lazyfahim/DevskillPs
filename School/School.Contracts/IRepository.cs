@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace School.Data
+namespace School.Contracts
 {
     public interface IRepository<T> where T : class
     {

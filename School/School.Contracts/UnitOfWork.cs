@@ -1,7 +1,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace School.Data
+namespace School.Contracts
 {
     public class UnitOfWork<T> : IUnitOfWork<T> where T : DbContext
     {

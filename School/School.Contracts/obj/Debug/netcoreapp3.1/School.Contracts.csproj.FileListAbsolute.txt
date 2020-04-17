@@ -1,0 +1,9 @@
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Contracts/bin/Debug/netcoreapp3.1/School.Contracts.deps.json
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Contracts/bin/Debug/netcoreapp3.1/School.Contracts.dll
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Contracts/bin/Debug/netcoreapp3.1/School.Contracts.pdb
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Contracts/obj/Debug/netcoreapp3.1/School.Contracts.csprojAssemblyReference.cache
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Contracts/obj/Debug/netcoreapp3.1/School.Contracts.csproj.CoreCompileInputs.cache
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Contracts/obj/Debug/netcoreapp3.1/School.Contracts.AssemblyInfoInputs.cache
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Contracts/obj/Debug/netcoreapp3.1/School.Contracts.AssemblyInfo.cs
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Contracts/obj/Debug/netcoreapp3.1/School.Contracts.dll
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Contracts/obj/Debug/netcoreapp3.1/School.Contracts.pdb

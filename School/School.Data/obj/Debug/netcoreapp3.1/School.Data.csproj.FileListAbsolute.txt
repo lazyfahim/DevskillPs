@@ -1,0 +1,17 @@
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/bin/Debug/netcoreapp3.1/School.Data.deps.json
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/bin/Debug/netcoreapp3.1/School.Data.runtimeconfig.json
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/bin/Debug/netcoreapp3.1/School.Data.runtimeconfig.dev.json
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/bin/Debug/netcoreapp3.1/School.Data.dll
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/bin/Debug/netcoreapp3.1/School.Data.pdb
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/bin/Debug/netcoreapp3.1/School.Contracts.dll
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/bin/Debug/netcoreapp3.1/School.Models.dll
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/bin/Debug/netcoreapp3.1/School.Contracts.pdb
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/bin/Debug/netcoreapp3.1/School.Models.pdb
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/obj/Debug/netcoreapp3.1/School.Data.csprojAssemblyReference.cache
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/obj/Debug/netcoreapp3.1/School.Data.csproj.CoreCompileInputs.cache
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/obj/Debug/netcoreapp3.1/School.Data.AssemblyInfoInputs.cache
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/obj/Debug/netcoreapp3.1/School.Data.AssemblyInfo.cs
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/obj/Debug/netcoreapp3.1/School.Data.csproj.CopyComplete
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/obj/Debug/netcoreapp3.1/School.Data.dll
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/obj/Debug/netcoreapp3.1/School.Data.pdb
+/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/obj/Debug/netcoreapp3.1/School.Data.genruntimeconfig.cache

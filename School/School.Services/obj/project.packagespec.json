@@ -1,0 +1,56 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Services/School.Services.csproj",
+    "projectName": "School.Services",
+    "projectPath": "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Services/School.Services.csproj",
+    "outputPath": "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Services/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Contracts/School.Contracts.csproj": {
+            "projectPath": "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Contracts/School.Contracts.csproj"
+          },
+          "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/School.Data.csproj": {
+            "projectPath": "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/School.Data.csproj"
+          },
+          "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Models/School.Models.csproj": {
+            "projectPath": "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Models/School.Models.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+    }
+  }
+}
