@@ -25,5 +25,11 @@ namespace School.Services
             _schoolUnitOfWork.StudentRepository.Add(student);
             _schoolUnitOfWork.Save();
         }
+
+        public void EditStudent(Student student)
+        {
+            _schoolUnitOfWork.StudentRepository.Edit(student);
+            _schoolUnitOfWork.Save();
+        }
     }
 }

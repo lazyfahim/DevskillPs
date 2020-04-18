@@ -14,7 +14,7 @@
         "outputPath": "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/lazyfahim/.nuget/NuGet/NuGet.Config"
+          "/home/lazyfahim/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -78,7 +78,7 @@
         "outputPath": "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/lazyfahim/.nuget/NuGet/NuGet.Config"
+          "/home/lazyfahim/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -141,7 +141,7 @@
         "outputPath": "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/lazyfahim/.nuget/NuGet/NuGet.Config"
+          "/home/lazyfahim/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

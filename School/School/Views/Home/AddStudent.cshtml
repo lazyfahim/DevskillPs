@@ -1,8 +1,32 @@
-@model Student
+@model StudentModel
 
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
 
-<h2>Insert Student</h2>
+<div class="container center_div" style="width: 50rem;">
+    <h2>Insert Student</h2>
+    <form asp-controller="Home" asp-action="AddStudent" method="post" >
+        <div class="form-group col-md-4" >
+            <label asp-for="Name" class="col-md-2"></label>
+            <div class="col-md-10">
+                <input asp-for="Name" class="form-control"/>
+                <span asp-validation-for="Name"></span>
+            </div>
+            <label asp-for="DateOfBirth" class="col-md-2"></label>
+            <div class="col-md-10">
+                <input asp-for="DateOfBirth"  asp-format="{0:dd/MM/yyyy HH:mm}"   class="form-control"/>
+                <span asp-validation-for="DateOfBirth" ></span>
+            </div>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Save" />
+    </form>
+</div>
+@section Styles
+{
+    .center_div{
+        margin: 0 auto;
+        width:80% /* value of your choice which suits your alignment */
+    }
+}

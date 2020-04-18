@@ -13,23 +13,28 @@ namespace School.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IStudentService _service;
-
-        public HomeController(ILogger<HomeController> logger, IStudentService service)
+        private readonly StudentModel _studentModel;
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _service = service;
-
+            _studentModel = new StudentModel();
         }
 
         public IActionResult Index()
         {
-            ViewData.Model = _service.GetStudents(1,10);
+            ViewData.Model = _studentModel.GetStudents(1,10);
             return View();
         }
 
         public IActionResult AddStudent()
         {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult AddStudent(string Name, DateTime DateOfBirth)
+        {
+            _studentModel.CreateStudent(Name,DateOfBirth);
             return View();
         }
 

@@ -1273,7 +1273,7 @@
       "outputPath": "/home/lazyfahim/devskilltraining/DevskillPs/School/School.Services/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/lazyfahim/.nuget/NuGet/NuGet.Config"
+        "/home/lazyfahim/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

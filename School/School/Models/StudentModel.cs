@@ -6,10 +6,10 @@ using School.Services;
 
 namespace School.Models
 {
-    public class StudenModel
+    public class StudentModel
     {
         private IStudentService _service;
-        public StudenModel()
+        public StudentModel()
         {
             _service = Startup.AutofacContainer.Resolve<IStudentService>();
         }
@@ -29,6 +29,16 @@ namespace School.Models
                 DateOfBirth = DateOfBirth
             };
             _service.AddStudent(student);
+        }
+
+        public IList<Student> GetStudents(int index, int page, string searchText=null,string sortText=null)
+        {
+            return _service.GetStudents(index, page, searchText, sortText);
+        }
+
+        public void EditStudent(string Name, DateTime DateOfBirth)
+        {
+            
         }
     }
     

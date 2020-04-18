@@ -103,3 +103,4 @@
 /home/lazyfahim/devskilltraining/DevskillPs/School/School/obj/Debug/netcoreapp3.1/School.dll
 /home/lazyfahim/devskilltraining/DevskillPs/School/School/obj/Debug/netcoreapp3.1/School.pdb
 /home/lazyfahim/devskilltraining/DevskillPs/School/School/obj/Debug/netcoreapp3.1/School.genruntimeconfig.cache
+/home/lazyfahim/devskilltraining/DevskillPs/School/School/obj/Debug/netcoreapp3.1/Razor/Views/Home/AddStudent.cshtml.g.cs

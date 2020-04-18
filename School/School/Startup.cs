@@ -41,7 +41,7 @@ namespace School
             var connectionString = Configuration.GetConnectionString(connectionStringName);
             var migrationAssemblyName = typeof(Startup).Assembly.FullName;
             builder.RegisterModule(new DataModule(connectionString, migrationAssemblyName));
-            builder.RegisterModule(new ServiceModule());
+            builder.RegisterModule(new ServiceModule(connectionString,migrationAssemblyName));
         }
 
         #endregion
