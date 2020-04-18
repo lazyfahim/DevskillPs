@@ -5,7 +5,6 @@ namespace School.Contracts
 {
     public interface IUnitOfWork<T> : IDisposable where T : DbContext
     {
-        public void Dispose();
         public void Save();
     }
 }

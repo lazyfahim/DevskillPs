@@ -71,6 +71,12 @@ namespace School.Controllers
             return View();
         }
 
+        public IActionResult Delete(int Id)
+        { 
+            _service.DeleteStudent(Id);
+            return RedirectToAction("Index");
+        }
+
         public IActionResult Privacy()
         {
             return View();

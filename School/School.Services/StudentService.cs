@@ -37,5 +37,11 @@ namespace School.Services
             var student = _schoolUnitOfWork.StudentRepository.GetById(Id);
             return student;
         }
+
+        public void DeleteStudent(int Id)
+        {
+            _schoolUnitOfWork.StudentRepository.Remove(Id);
+            _schoolUnitOfWork.Save();
+        }
     }
 }

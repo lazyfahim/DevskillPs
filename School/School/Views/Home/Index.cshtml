@@ -7,7 +7,12 @@
     <h1 class="display-4">Welcome</h1>
     @foreach (var student in students)
     {
-        <a asp-controller="Home" asp-action="Details" asp-route-Id="@student.Id"><h2>@student.Name </h2></a> 
+        <a asp-controller="Home" asp-action="Details" asp-route-Id="@student.Id">
+            <h2>
+                @student.Name | 
+            </h2>
+        </a>
+        <a asp-controller="Home" class="btn btn-danger" asp-action="Delete" asp-route-Id="@student.Id">DELETE</a>
     }
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>

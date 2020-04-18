@@ -21,7 +21,8 @@ namespace School.Contracts
 
         public virtual void Edit(T entityToUpdate)
         {
-            _dbSet.Attach(entityToUpdate);
+             if(_dbContext.Entry(entityToUpdate).State == EntityState.Detached)
+                _dbSet.Attach(entityToUpdate);
             _dbContext.Entry(entityToUpdate).State = EntityState.Modified;
         }
 
