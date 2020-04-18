@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Autofac.Core;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using School.Models;
@@ -13,16 +14,16 @@ namespace School.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly StudentModel _studentModel;
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IStudentService _service;
+        public HomeController(ILogger<HomeController> logger,IStudentService service)
         {
             _logger = logger;
-            _studentModel = new StudentModel();
+            _service = service;
         }
 
         public IActionResult Index()
         {
-            ViewData.Model = _studentModel.GetStudents(1,10);
+            ViewData.Model = _service.GetStudents(1,10);
             return View();
         }
 
@@ -34,9 +35,26 @@ namespace School.Controllers
         [HttpPost]
         public IActionResult AddStudent(string Name, DateTime DateOfBirth)
         {
-            _studentModel.CreateStudent(Name,DateOfBirth);
+            Student student = new Student()
+            {
+                Name = Name,
+                DateOfBirth = DateOfBirth
+            };
+            _service.AddStudent(student);
             return View();
         }
+
+        public IActionResult Details(int Id)
+        {
+            var model =  _service.GetStudent(Id);
+            return View(model);
+        }
+
+        /*public IActionResult EditStudent(int Id)
+        {
+            var model = _service.GetStudent(Id);
+            return View();
+        }*/
 
         public IActionResult Privacy()
         {

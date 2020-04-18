@@ -31,5 +31,10 @@ namespace School.Services
             _schoolUnitOfWork.StudentRepository.Edit(student);
             _schoolUnitOfWork.Save();
         }
+
+        public Student GetStudent(int Id)
+        {
+            return _schoolUnitOfWork.StudentRepository.GetById(Id);
+        }
     }
 }
