@@ -50,11 +50,26 @@ namespace School.Controllers
             return View(model);
         }
 
-        /*public IActionResult EditStudent(int Id)
+        public IActionResult EditStudent(int Id)
         {
             var model = _service.GetStudent(Id);
+            ViewData["student"] = model;
             return View();
-        }*/
+        }
+
+        [HttpPost]
+        public IActionResult EditStudent(int Id, string Name, DateTime DateOfBirth)
+        {
+            Student student = new Student()
+            {
+                Id = Id,
+                Name = Name,
+                DateOfBirth = DateOfBirth
+            };
+            _service.EditStudent(student);
+            ViewData["student"] = student;
+            return View();
+        }
 
         public IActionResult Privacy()
         {

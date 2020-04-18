@@ -34,7 +34,8 @@ namespace School.Services
 
         public Student GetStudent(int Id)
         {
-            return _schoolUnitOfWork.StudentRepository.GetById(Id);
+            var student = _schoolUnitOfWork.StudentRepository.GetById(Id);
+            return student;
         }
     }
 }

@@ -94,7 +94,10 @@ namespace School.Contracts
 
         public virtual T GetById(int id)
         {
-            return _dbSet.Find(id);
+            /*return _dbSet.Find(id);*/
+            var entity = _dbContext.Set<T>().Find(id);
+            _dbContext.Entry(entity).State = EntityState.Detached;
+            return entity;
         }
 
         public virtual int GetCount(Expression<Func<T, bool>> filter = null)

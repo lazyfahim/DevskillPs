@@ -7,7 +7,6 @@
 
 <div class="container center_div" style="width: 50rem;">
     <h2>Details of  Student</h2>
-    <form asp-controller="Home" asp-action="AddStudent" method="post" >
         <div class="form-group col-md-4" >
             <label asp-for="Name" class="col-md-2"></label>
             <div class="col-md-10">
@@ -19,8 +18,8 @@
                 <input asp-for="DateOfBirth" disabled value="@Model.DateOfBirth"  asp-format="{0:dd/MM/yyyy HH:mm}"   class="form-control"/>
                 <span asp-validation-for="DateOfBirth" ></span>
             </div>
+            <a asp-action="EditStudent" asp-route-Id="@Model.Id" class="btn btn-primary"> Edit </a>
         </div>
-    </form>
 </div>
 @section Styles
 {
