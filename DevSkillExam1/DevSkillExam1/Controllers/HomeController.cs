@@ -25,7 +25,8 @@ namespace DevSkillExam1.Controllers
 
         public IActionResult AddStudent()
         {
-            return View();
+            var model = new CreateStudentModel();
+            return View(model);
         }
         [HttpPost]
         public IActionResult AddStudent(CreateStudentModel model)

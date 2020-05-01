@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Autofac;
 using Devskill.Framework;
+using DevSkillExam1.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,7 +37,7 @@ namespace DevSkillExam1
             var migrationAssemblyName = typeof(Startup).Assembly.FullName;
 
             builder.RegisterModule(new FrameworkModule(connectionString, migrationAssemblyName));
-            //builder.RegisterType<BookModel>();
+            builder.RegisterType<CreateStudentModel>();
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
