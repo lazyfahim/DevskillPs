@@ -83,3 +83,4 @@
 /home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/DevSkillExam1/bin/Debug/netcoreapp3.1/Devskill.Framework.dll
 /home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/DevSkillExam1/bin/Debug/netcoreapp3.1/Devskill.Framework.pdb
 /home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/DevSkillExam1/bin/Debug/netcoreapp3.1/Devskill.Data.pdb
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/DevSkillExam1/obj/Debug/netcoreapp3.1/Razor/Views/Home/AddStudent.cshtml.g.cs

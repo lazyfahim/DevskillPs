@@ -22,6 +22,8 @@ namespace Devskill.Framework
                 .InstancePerLifetimeScope();
             builder.RegisterType<StudentRepository>().As<IStudentRepository>()
                 .InstancePerLifetimeScope();
+            builder.RegisterType<SubjectRepository>().As<ISubjectRepository>()
+                .InstancePerLifetimeScope();
             builder.RegisterType<StudentService>().As<IStudentService>()
                 .InstancePerLifetimeScope();
             base.Load(builder);
