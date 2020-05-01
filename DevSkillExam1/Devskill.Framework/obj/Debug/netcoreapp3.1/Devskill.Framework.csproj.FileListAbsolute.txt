@@ -1,0 +1,15 @@
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/bin/Debug/netcoreapp3.1/Devskill.Framework.deps.json
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/bin/Debug/netcoreapp3.1/Devskill.Framework.dll
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/bin/Debug/netcoreapp3.1/Devskill.Framework.pdb
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/obj/Debug/netcoreapp3.1/Devskill.Framework.csprojAssemblyReference.cache
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/obj/Debug/netcoreapp3.1/Devskill.Framework.csproj.CoreCompileInputs.cache
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/obj/Debug/netcoreapp3.1/Devskill.Framework.AssemblyInfoInputs.cache
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/obj/Debug/netcoreapp3.1/Devskill.Framework.AssemblyInfo.cs
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/obj/Debug/netcoreapp3.1/Devskill.Framework.dll
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/obj/Debug/netcoreapp3.1/Devskill.Framework.pdb
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/bin/Debug/netcoreapp3.1/Devskill.Data.dll
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/bin/Debug/netcoreapp3.1/Devskill.Data.pdb
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/obj/Debug/netcoreapp3.1/Devskill.Framework.csproj.CopyComplete
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/bin/Debug/netcoreapp3.1/Devskill.Framework.runtimeconfig.json
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/bin/Debug/netcoreapp3.1/Devskill.Framework.runtimeconfig.dev.json
+/home/lazyfahim/devskilltraining/DevskillPs/DevSkillExam1/Devskill.Framework/obj/Debug/netcoreapp3.1/Devskill.Framework.genruntimeconfig.cache
