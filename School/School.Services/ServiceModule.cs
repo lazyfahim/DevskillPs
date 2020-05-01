@@ -19,6 +19,9 @@ namespace School.Services
             builder.RegisterType<StudentService>().As<IStudentService>()
                 .WithParameter("schoolUnitOfWork",new SchoolUnitOfWork(_connectionString,_migrationAssemblyName))
                 .InstancePerLifetimeScope();
+            builder.RegisterType<CourseService>().As<ICourseService>()
+                .WithParameter("unitOfWork",new SchoolUnitOfWork(_connectionString,_migrationAssemblyName))
+                .InstancePerLifetimeScope();
         }
     }
 }

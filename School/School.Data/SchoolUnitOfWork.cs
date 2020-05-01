@@ -10,6 +10,7 @@ namespace School.Data
             base(connectionString, migrationAssemblyName)
         {
             StudentRepository = new StudentRepository(_dbContext);
+            CourseRepository = new CourseRepository(_dbContext);
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using School.Contracts;
@@ -28,7 +29,9 @@ namespace School.Services
 
         public void EditStudent(Student student)
         {
-            _schoolUnitOfWork.StudentRepository.Edit(student);
+            var st = _schoolUnitOfWork.StudentRepository.GetById(student.Id);
+            st = student
+            _schoolUnitOfWork.StudentRepository.Edit(st);
             _schoolUnitOfWork.Save();
         }
 
@@ -36,6 +39,20 @@ namespace School.Services
         {
             var student = _schoolUnitOfWork.StudentRepository.GetById(Id);
             return student;
+        }
+
+        public void EnrollIntoCourse(int CourseId, int StudentId,bool PaymentComplete)
+        {
+            var student = _schoolUnitOfWork.StudentRepository.GetById(StudentId);
+            student.Courses.Add(new StudentRegistration()
+            {
+                StudentId = StudentId,
+                CourseId = CourseId,
+                EnrollDate = DateTime.Now,
+                IsPaymentComplete = false
+            });
+            _schoolUnitOfWork.StudentRepository.Edit(student);
+            _schoolUnitOfWork.Save();
         }
 
         public void DeleteStudent(int Id)

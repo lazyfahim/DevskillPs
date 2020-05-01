@@ -16,10 +16,10 @@ namespace School.Data
 
         protected override void Load(ContainerBuilder builder)
         {
-            /*builder.RegisterType<AppContext>()
+            builder.RegisterType<AppContext>()
                 .WithParameter("connectionString", _connectionString)
                 .WithParameter("migrationAssemblyName", _migrationAssemblyName)
-                .InstancePerLifetimeScope();*/
+                .InstancePerLifetimeScope();
             builder.RegisterType<AppContext>().As<IAppContext>()
                 .WithParameter("connectionString", _connectionString)
                 .WithParameter("migrationAssemblyName", _migrationAssemblyName)

@@ -23,7 +23,7 @@ namespace School.Contracts
         {
              if(_dbContext.Entry(entityToUpdate).State == EntityState.Detached)
                 _dbSet.Attach(entityToUpdate);
-            _dbContext.Entry(entityToUpdate).State = EntityState.Modified;
+             _dbContext.Entry(entityToUpdate).State = EntityState.Modified;
         }
 
         public virtual IEnumerable<T> Get(
@@ -95,10 +95,10 @@ namespace School.Contracts
 
         public virtual T GetById(int id)
         {
-            /*return _dbSet.Find(id);*/
-            var entity = _dbContext.Set<T>().Find(id);
+            return _dbSet.Find(id);
+            /*var entity = _dbContext.Set<T>().Find(id);
             _dbContext.Entry(entity).State = EntityState.Detached;
-            return entity;
+            return entity;*/
         }
 
         public virtual int GetCount(Expression<Func<T, bool>> filter = null)
