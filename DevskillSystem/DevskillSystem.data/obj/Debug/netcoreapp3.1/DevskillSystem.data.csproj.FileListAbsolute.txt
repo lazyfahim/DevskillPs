@@ -1,0 +1,12 @@
+/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/obj/Debug/netcoreapp3.1/DevskillSystem.data.csprojAssemblyReference.cache
+/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/obj/Debug/netcoreapp3.1/DevskillSystem.data.csproj.CoreCompileInputs.cache
+/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/obj/Debug/netcoreapp3.1/DevskillSystem.data.AssemblyInfoInputs.cache
+/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/obj/Debug/netcoreapp3.1/DevskillSystem.data.AssemblyInfo.cs
+/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/bin/Debug/netcoreapp3.1/DevskillSystem.data.deps.json
+/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/bin/Debug/netcoreapp3.1/DevskillSystem.data.dll
+/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/bin/Debug/netcoreapp3.1/DevskillSystem.data.pdb
+/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/obj/Debug/netcoreapp3.1/DevskillSystem.data.dll
+/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/obj/Debug/netcoreapp3.1/DevskillSystem.data.pdb
+/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/bin/Debug/netcoreapp3.1/DevskillSystem.data.runtimeconfig.json
+/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/bin/Debug/netcoreapp3.1/DevskillSystem.data.runtimeconfig.dev.json
+/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/obj/Debug/netcoreapp3.1/DevskillSystem.data.genruntimeconfig.cache
