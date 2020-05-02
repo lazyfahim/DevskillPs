@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z35DJaLJOqsL/x9naVTIq/9lXcsEzYk4v/aYleNhyPHifSottOvJzvi5BwsnoZgcaYQY0zqv8U8DiVbdJi2jAA==",
+  "dgSpecHash": "fc2QHUnEK+La6L1UP42F6uyrFWbThanoeabbjYuLve811Yg5NY0lMZYumzTfZMB5/hpgM9umkirn7baxOfM2aQ==",
   "success": true,
-  "projectFilePath": "/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevskillSystem.data/DevskillSystem.data.csproj",
+  "projectFilePath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.data/DevskillSystem.data.csproj",
   "expectedPackageFiles": [
     "/home/lazyfahim/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.0/microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "/home/lazyfahim/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

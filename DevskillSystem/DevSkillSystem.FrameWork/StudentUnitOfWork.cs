@@ -7,7 +7,7 @@ namespace DevSkillSystem.FrameWork
     {
         public IStudentRepository StudentRepository { get; set; }
         public ISubjectRepository SubjectRepository { get; set; }
-        public StudentUnitOfWork(DbContext dbContext,
+        public StudentUnitOfWork(FrameWorkContext dbContext,
             IStudentRepository studentRepository,
             ISubjectRepository subjectRepository) 
             : base(dbContext)

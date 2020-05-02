@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d2C82Mcbdc2XqpDMrT8O1Rx4Nuwc4rVeIVoKuShIZDDu6HgwZ97H1PKX0oQ7tCWhWExC0lxLKLfE5sas0VvBsQ==",
+  "dgSpecHash": "6k9sHnpq06DkKnXDXoQ396smphE1PbZj3RUMHle/bo+vGOfZ6rI4KJT3ZkhjD+5mN4FDQs7LvMXzS1+oSOxIow==",
   "success": true,
-  "projectFilePath": "/home/lazyfahim/devskilltraining/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/DevSkillSystem.FrameWork.csproj",
+  "projectFilePath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/DevSkillSystem.FrameWork.csproj",
   "expectedPackageFiles": [
     "/home/lazyfahim/.nuget/packages/autofac/5.0.0/autofac.5.0.0.nupkg.sha512",
     "/home/lazyfahim/.nuget/packages/autofac.extensions.dependencyinjection/6.0.0/autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",

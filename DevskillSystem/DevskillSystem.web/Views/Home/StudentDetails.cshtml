@@ -1,0 +1,48 @@
+@using DevSkillSystem.FrameWork
+@model DevSkillSystem.FrameWork.Student
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>title</h2>
+@Model.Name
+@Model.Email
+<h3>Enroll to Course</h3>
+
+
+<div class="container center_div" style="width: 50rem;">
+    <h2>Insert Student</h2>
+    <form asp-controller="Home" asp-action="GradeInSubject" method="post" >
+        <div class="form-group col-md-4" >
+        <input data-val="true" 
+                     
+                    name="studentId" 
+                    type="hidden" 
+                    value="@Model.Id" />
+        
+
+            <label  class="col-md-2">Subject Id</label>
+            <div class="col-md-10">
+                <input name="subjectId" class="form-control"/>
+                <span asp-validation-for="Name"></span>
+            </div>
+            <label  class="col-md-2">CGPA</label>
+            <div class="col-md-10">
+                <input name="grade" class="form-control"/>
+            </div>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Save" />
+    </form>
+</div>
+
+
+
+<h3>Enrolled Courses</h3>
+<ul>
+@foreach (Grade grade in Model.Gardes)
+{
+    <li>@grade.Subject.Name</li>
+}
+</ul>
