@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using Microsoft.EntityFrameworkCore.Query;
 
 namespace DevSkillSystem.FrameWork
 {
@@ -20,19 +21,20 @@ namespace DevSkillSystem.FrameWork
         (IList<Student> data, int total, int totalDisplay) Get(
             Expression<Func<Student, bool>> filter = null,
             Func<IQueryable<Student>, IOrderedQueryable<Student>> orderBy = null,
-            string includeProperties = "", int pageIndex = 1, int pageSize = 10, bool isTrackingOff = false);
+            Func<IQueryable<Student>, IIncludableQueryable<Student, object>> include = null, int pageIndex = 1, int pageSize = 10, bool isTrackingOff = false);
 
         (IList<Student> data, int total, int totalDisplay) GetDynamic(
             Expression<Func<Student, bool>> filter = null,
             string orderBy = null,
-            string includeProperties = "", int pageIndex = 1, int pageSize = 10, bool isTrackingOff = false);
+            Func<IQueryable<Student>, IIncludableQueryable<Student, object>> include = null, int pageIndex = 1, int pageSize = 10, bool isTrackingOff = false);
 
         IList<Student> Get(Expression<Func<Student, bool>> filter = null,
             Func<IQueryable<Student>, IOrderedQueryable<Student>> orderBy = null,
-            string includeProperties = "", bool isTrackingOff = false);
+            Func<IQueryable<Student>, IIncludableQueryable<Student, object>> include = null, bool isTrackingOff = false);
 
         IList<Student> GetDynamic(Expression<Func<Student, bool>> filter = null,
             string orderBy = null,
-            string includeProperties = "", bool isTrackingOff = false);
+            Func<IQueryable<Student>, IIncludableQueryable<Student, object>> include = null
+            , bool isTrackingOff = false);
     }
 }

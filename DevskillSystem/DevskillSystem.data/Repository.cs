@@ -4,12 +4,12 @@ using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
+using Microsoft.EntityFrameworkCore.Query;
 
 namespace DevskillSystem.data
 {
     public abstract class Repository<TEntity, TKey, TContext>
-        : IRepository<TEntity, TKey, TContext>
-        where TEntity : class, IEntity<TKey>
+        : IRepository<TEntity, TKey> where TEntity : class, IEntity<TKey>
         where TContext : DbContext
     {
         protected TContext _dbContext;
@@ -94,7 +94,7 @@ namespace DevskillSystem.data
         public virtual (IList<TEntity> data, int total, int totalDisplay) Get(
             Expression<Func<TEntity, bool>> filter = null,
             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
-            string includeProperties = "", int pageIndex = 1, int pageSize = 10, bool isTrackingOff = false)
+            Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null, int pageIndex = 1, int pageSize = 10, bool isTrackingOff = false)
         {
             IQueryable<TEntity> query = _dbSet;
             var total = query.Count();
@@ -106,10 +106,9 @@ namespace DevskillSystem.data
                 totalDisplay = query.Count();
             }
 
-            foreach (var includeProperty in includeProperties.Split
-                (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            if (include != null)
             {
-                query = query.Include(includeProperty);
+                query = include(query);
             }
 
             if (orderBy != null)
@@ -133,7 +132,7 @@ namespace DevskillSystem.data
         public virtual (IList<TEntity> data, int total, int totalDisplay) GetDynamic(
             Expression<Func<TEntity, bool>> filter = null,
             string orderBy = null,
-            string includeProperties = "", int pageIndex = 1, int pageSize = 10, bool isTrackingOff = false)
+            Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null, int pageIndex = 1, int pageSize = 10, bool isTrackingOff = false)
         {
             IQueryable<TEntity> query = _dbSet;
             var total = query.Count();
@@ -145,10 +144,9 @@ namespace DevskillSystem.data
                 totalDisplay = query.Count();
             }
 
-            foreach (var includeProperty in includeProperties.Split
-                (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            if (include != null)
             {
-                query = query.Include(includeProperty);
+                query = include(query);
             }
 
             if (orderBy != null)
@@ -171,7 +169,7 @@ namespace DevskillSystem.data
 
         public virtual IList<TEntity> Get(Expression<Func<TEntity, bool>> filter = null,
             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
-            string includeProperties = "", bool isTrackingOff = false)
+            Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null, bool isTrackingOff = false)
         {
             IQueryable<TEntity> query = _dbSet;
 
@@ -180,10 +178,9 @@ namespace DevskillSystem.data
                 query = query.Where(filter);
             }
 
-            foreach (var includeProperty in includeProperties.Split
-                (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            if (include != null)
             {
-                query = query.Include(includeProperty);
+                query = include(query);
             }
 
             if (orderBy != null)
@@ -206,7 +203,8 @@ namespace DevskillSystem.data
 
         public virtual IList<TEntity> GetDynamic(Expression<Func<TEntity, bool>> filter = null,
             string orderBy = null,
-            string includeProperties = "", bool isTrackingOff = false)
+            Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null
+            , bool isTrackingOff = false)
         {
             IQueryable<TEntity> query = _dbSet;
 
@@ -215,10 +213,9 @@ namespace DevskillSystem.data
                 query = query.Where(filter);
             }
 
-            foreach (var includeProperty in includeProperties.Split
-                (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            if (include != null)
             {
-                query = query.Include(includeProperty);
+                query = include(query);
             }
 
             if (orderBy != null)

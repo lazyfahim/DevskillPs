@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace DevSkillSystem.FrameWork
 {
@@ -20,7 +21,8 @@ namespace DevSkillSystem.FrameWork
         public Student GetStudent(int Id)
         {
             var student = _studentUnitOfWork.StudentRepository.Get(s => s.Id == Id,null
-            ,"Gardes",false).FirstOrDefault();
+            ,i => i.Include(s => s.Gardes).ThenInclude(s => s.Subject),
+            false).FirstOrDefault();
             return student;
         } 
         public IList<Student> GetAllStudent()
@@ -36,7 +38,9 @@ namespace DevSkillSystem.FrameWork
         public void MarkGrade(int studentId, int subjectId,double gradevalue)
         {
             var studenttoedit = _studentUnitOfWork.StudentRepository
-            .Get(s => s.Id == studentId, null, "Gardes", false)
+            .Get(s => s.Id == studentId, null,
+                i => i.Include(s => s.Gardes), 
+                false)
             .FirstOrDefault<Student>();
             studenttoedit.Gardes.Add(new Grade{
                 GradeValue = gradevalue,
