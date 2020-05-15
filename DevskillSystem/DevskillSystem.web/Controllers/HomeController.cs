@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DevskillSystem.web.Models;
-using DevskillSystem.web.Models.StudentModels;
-using DevskillSystem.web.Models.SubjectModels;
+using DevskillSystem.web.Models.TransactionModels;
 
 namespace DevskillSystem.web.Controllers
 {
@@ -22,64 +21,40 @@ namespace DevskillSystem.web.Controllers
 
         public IActionResult Index()
         {
-            var model = new StudentModel();
-            var students = model.GetAll();
-            return View(students);
+            var model = new TransModel();
+            var transactions = model.GetAll();
+            return View(transactions);
         }
 
-        public IActionResult AddStudent()
+        public IActionResult AddTrans()
         {
-            var student = new StudentCreateModel();
-            return View(student);
+            var trans = new TransCreateModel();
+            return View(trans);
         }
         [HttpPost]
-        public IActionResult AddStudent(StudentCreateModel student)
+        public IActionResult AddTrans(TransCreateModel model)
         {
-            student.CreateStudent();
+            model.Create();
             return RedirectToAction("Index");
         }
 
-        public IActionResult Subjects()
+        public IActionResult EditTrans(int Id)
         {
-            SubjectBaseModel model = new SubjectBaseModel();
-            var subjects = model._subjectService.GetAllSubjects();
-            return View(subjects);
+            var trans =new TransEditModel(Id);
+            return View(trans);
         }
 
         [HttpPost]
-        public IActionResult GradeInSubject(int studentId,int subjectId, double grade)
+        public IActionResult EditTrans(TransEditModel trans)
         {
-            StudentModel model = new StudentModel();
-            model._studentService.MarkGrade(studentId,subjectId,grade);
-            return RedirectToAction("StudentDetails", new {id = studentId});
-        }
-
-        public IActionResult Subject(int Id)
-        {
+            trans.Edit();
             return View();
         }
-
-        public IActionResult DeleteSubject(int Id)
+        public IActionResult Delete(int Id)
         {
-            return RedirectToAction("Subjects");
-        }
-
-        public IActionResult AddSubject()
-        {
-            return View();
-        }
-        [HttpPost]
-        public IActionResult AddSubject(SubjectCreateModel subject)
-        {
-            subject.CreateSubject();
-            return RedirectToAction("Subjects");
-        }
-
-        public IActionResult StudentDetails(int Id)
-        {
-            StudentModel studentmodel = new StudentModel();
-            var model = studentmodel.Get(Id);
-            return View(model);
+            var model = new TransModel();
+            model.Delete(Id);
+            return RedirectToAction("Index");
         }
 
         public IActionResult Privacy()

@@ -1,0 +1,39 @@
+@using DevSkillSystem.FrameWork
+@model DevskillSystem.web.Models.TransactionModels.TransCreateModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<h2>Add Transaction</h2>
+<div class="container center_div" style="width: 50rem;">
+    <h2>Add Transaction</h2>
+    <form asp-controller="Home" asp-action="AddTrans" method="post" >
+        <div class="form-group col-md-4" >
+            <label asp-for="Name" class="col-md-2"></label>
+            <div class="col-md-10">
+                <input asp-for="Name" class="form-control"/>
+                <span asp-validation-for="Name"></span>
+            </div>
+            <label asp-for="Amount" class="col-md-2"></label>
+            <div class="col-md-10">
+                <input asp-for="Amount"    class="form-control"/>
+                <span asp-validation-for="Amount" ></span>
+            </div>
+            <label asp-for="TrxType" class="col-md-2"></label><br/>
+            <select asp-for="TrxType" asp-items="Html.GetEnumSelectList<TrxType>()">
+                <option selected="selected" value="">Please select</option>
+            </select>
+            <span asp-validation-for="TrxType" class="text-danger" />
+        </div>
+        <input class="btn btn-primary" type="submit" value="Save" />
+    </form>
+</div>
+
+@section Styles
+{
+    .center_div{
+        margin: 0 auto;
+        width:80% /* value of your choice which suits your alignment */
+    }
+}

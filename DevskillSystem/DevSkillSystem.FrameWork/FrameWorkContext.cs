@@ -7,8 +7,7 @@ namespace DevSkillSystem.FrameWork
         private string _connectionStringName;
         private string _migrationAssemblyName;
         
-        public DbSet<Student> Students { get; set; }
-        public DbSet<Subject> Subjects { get; set; } 
+        public DbSet<Transaction> Transactions { get; set; }
         
         public FrameWorkContext(string connectionStringName, string migrationAssemblyName)
         {
@@ -18,8 +17,10 @@ namespace DevSkillSystem.FrameWork
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Grade>().HasKey(gr => new {gr.StudentId, gr.SubjectId});
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Transaction>()
+                .Property(t => t.TrxType)
+                .HasConversion<string>();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

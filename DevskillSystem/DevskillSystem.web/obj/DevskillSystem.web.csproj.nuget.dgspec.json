@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.web/DevskillSystem.web.csproj": {}
+    "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevskillSystem.web/DevskillSystem.web.csproj": {}
   },
   "projects": {
-    "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/DevSkillSystem.FrameWork.csproj": {
+    "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/DevSkillSystem.FrameWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/DevSkillSystem.FrameWork.csproj",
+        "projectUniqueName": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/DevSkillSystem.FrameWork.csproj",
         "projectName": "DevSkillSystem.FrameWork",
-        "projectPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/DevSkillSystem.FrameWork.csproj",
+        "projectPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/DevSkillSystem.FrameWork.csproj",
         "packagesPath": "/home/lazyfahim/.nuget/packages/",
-        "outputPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/obj/",
+        "outputPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/lazyfahim/.config/NuGet/NuGet.Config"
+          "/home/lazyfahim/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -25,8 +25,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.data/DevskillSystem.data.csproj": {
-                "projectPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.data/DevskillSystem.data.csproj"
+              "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevskillSystem.data/DevskillSystem.data.csproj": {
+                "projectPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevskillSystem.data/DevskillSystem.data.csproj"
               }
             }
           }
@@ -64,17 +64,17 @@
         }
       }
     },
-    "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.data/DevskillSystem.data.csproj": {
+    "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevskillSystem.data/DevskillSystem.data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.data/DevskillSystem.data.csproj",
+        "projectUniqueName": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevskillSystem.data/DevskillSystem.data.csproj",
         "projectName": "DevskillSystem.data",
-        "projectPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.data/DevskillSystem.data.csproj",
+        "projectPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevskillSystem.data/DevskillSystem.data.csproj",
         "packagesPath": "/home/lazyfahim/.nuget/packages/",
-        "outputPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.data/obj/",
+        "outputPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevskillSystem.data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/lazyfahim/.config/NuGet/NuGet.Config"
+          "/home/lazyfahim/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -128,17 +128,17 @@
         }
       }
     },
-    "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.web/DevskillSystem.web.csproj": {
+    "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevskillSystem.web/DevskillSystem.web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.web/DevskillSystem.web.csproj",
+        "projectUniqueName": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevskillSystem.web/DevskillSystem.web.csproj",
         "projectName": "DevskillSystem.web",
-        "projectPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.web/DevskillSystem.web.csproj",
+        "projectPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevskillSystem.web/DevskillSystem.web.csproj",
         "packagesPath": "/home/lazyfahim/.nuget/packages/",
-        "outputPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.web/obj/",
+        "outputPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevskillSystem.web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/lazyfahim/.config/NuGet/NuGet.Config"
+          "/home/lazyfahim/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -149,8 +149,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/DevSkillSystem.FrameWork.csproj": {
-                "projectPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/DevSkillSystem.FrameWork.csproj"
+              "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/DevSkillSystem.FrameWork.csproj": {
+                "projectPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillPs/DevskillSystem/DevSkillSystem.FrameWork/DevSkillSystem.FrameWork.csproj"
               }
             }
           }

@@ -17,20 +17,14 @@ namespace DevSkillSystem.FrameWork
                 .WithParameter("connectionStringName", _connectionStringName)
                 .WithParameter("migrationAssemblyName", _migrationAssemblyName)
                 .InstancePerLifetimeScope();
-            builder.RegisterType<StudentUnitOfWork>()
-                .As<IStudentUnitOfWork>()
+            builder.RegisterType<TransactionUnitOfWork>()
+                .As<ITransactionUnitOfWork>()
                 .InstancePerLifetimeScope();
-            builder.RegisterType<StudentRepository>()
-                .As<IStudentRepository>()
+            builder.RegisterType<TransactionRepository>()
+                .As<ITransactionRepository>()
                 .InstancePerLifetimeScope();
-            builder.RegisterType<SubjectRepository>()
-                .As<ISubjectRepository>()
-                .InstancePerLifetimeScope();
-            builder.RegisterType<StudentService>()
-                .As<IStudentService>()
-                .InstancePerLifetimeScope();
-            builder.RegisterType<SubjectService>()
-                .As<ISubjectService>()
+            builder.RegisterType<TransactionService>()
+                .As<ITransactionService>()
                 .InstancePerLifetimeScope();
                 
                 

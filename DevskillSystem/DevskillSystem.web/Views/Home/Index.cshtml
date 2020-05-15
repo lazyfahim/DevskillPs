@@ -1,18 +1,18 @@
 ﻿@using DevSkillSystem.FrameWork
-@model IList<DevSkillSystem.FrameWork.Student>
+@model IList<DevSkillSystem.FrameWork.Transaction>
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <a asp-action="AddStudent" class="btn btn-primary">Add Student</a>
-    <a asp-action="AddSubject" class="btn btn-primary">Add Subject</a>
-    <a asp-action="Subjects" class="btn btn-primary">Subjects</a>
+    <a asp-action="AddTrans" class="btn btn-primary">Add Transaction</a>
+    
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    @foreach (Student student in Model)
+    @foreach (Transaction trans in Model)
     {
-        <a asp-action="StudentDetails" asp-route-id="@student.Id"><h2>@student.UserName || @student.Name || @student.Email  </h2></a>
-        <a asp-action="Delete" class="btn btn-danger" >Delete</a>
+        <a asp-action="" asp-route-id="@trans.Id"><h2>@trans.Name || @trans.Amount || @trans.InsertTime || @trans.TrxType  </h2></a>
+        <a asp-action="Delete" asp-route-Id="@trans.Id" class="btn btn-danger" >Delete</a>
+        <a asp-action="EditTrans" asp-route-Id="@trans.Id" class="btn btn-danger" >Edit</a>
     }
 </div>

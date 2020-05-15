@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using DevSkillSystem.FrameWork;
-using DevskillSystem.web.Models.StudentModels;
+using DevskillSystem.web.Models.TransactionModels;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -38,7 +38,7 @@ namespace DevskillSystem.web
             var migrationAssembley = typeof(Startup).Assembly.FullName;
 
             builder.RegisterModule(new FrameWorkModule(connectionString, migrationAssembley));
-            builder.RegisterType<StudentCreateModel>();
+            builder.RegisterType<TransCreateModel>();
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
