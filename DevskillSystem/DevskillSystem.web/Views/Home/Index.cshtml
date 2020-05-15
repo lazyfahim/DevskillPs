@@ -1,15 +1,18 @@
 ﻿@using DevSkillSystem.FrameWork
-@model IList<DevSkillSystem.FrameWork.Transaction>
+@model DevskillSystem.web.Models.TransactionModels.TransModel
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
+    <h2>Total Income: @Model.TotalIncome </h2>
+    <h2>Total Expense: @Model.TotalExpense </h2>
+    <h2>Balance: @Model.TotalBalance</h2>
     <a asp-action="AddTrans" class="btn btn-primary">Add Transaction</a>
     
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    @foreach (Transaction trans in Model)
+    @foreach (Transaction trans in Model.Transactions)
     {
         <a asp-action="" asp-route-id="@trans.Id"><h2>@trans.Name || @trans.Amount || @trans.InsertTime || @trans.TrxType  </h2></a>
         <a asp-action="Delete" asp-route-Id="@trans.Id" class="btn btn-danger" >Delete</a>

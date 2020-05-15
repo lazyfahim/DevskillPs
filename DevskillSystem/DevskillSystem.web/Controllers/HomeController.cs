@@ -22,8 +22,7 @@ namespace DevskillSystem.web.Controllers
         public IActionResult Index()
         {
             var model = new TransModel();
-            var transactions = model.GetAll();
-            return View(transactions);
+            return View(model);
         }
 
         public IActionResult AddTrans()

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using DevSkillSystem.FrameWork;
 
 namespace DevskillSystem.web.Models.TransactionModels
@@ -13,10 +14,23 @@ namespace DevskillSystem.web.Models.TransactionModels
 
         public TransModel()
         {
-            
+            Transactions = GetAll();
+            TotalIncome = Transactions.Where(t => t.TrxType == TrxType.Income)
+                .Select(t => t.Amount).Sum();
+            TotalExpense = Transactions.Where(t => t.TrxType == TrxType.Expense)
+                .Select(t => t.Amount).Sum();
+        }
+        
+        public IList<Transaction> Transactions { get;private set; }
+        public double TotalIncome { get; private set; }
+        public double TotalExpense { get; private set; }
+
+        public double TotalBalance
+        {
+            get { return TotalIncome - TotalExpense; }
         }
 
-        public IList<Transaction> GetAll()
+        private IList<Transaction> GetAll()
         {
             return _service.GetAll();
         }
