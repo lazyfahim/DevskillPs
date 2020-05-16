@@ -12,9 +12,10 @@ namespace DevSkillSystem.FrameWork
         public double Amount { get; set; }
         public TrxType TrxType { get; set; }
         private DateTime _insertTime;
+
         public DateTime InsertTime
         {
-            get => _insertTime; 
+            get => _insertTime;
             set => _insertTime = DateTime.Now;
         }
     }

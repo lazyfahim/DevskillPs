@@ -33,8 +33,8 @@ namespace DevskillSystem.web
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            var connectionStringName = "DefaultConnection";
-            var connectionString = Configuration.GetConnectionString(connectionStringName);
+            var connectionStringName = "ConnectionStrings:DefaultConnection";
+            var connectionString = Configuration[connectionStringName];
             var migrationAssembley = typeof(Startup).Assembly.FullName;
 
             builder.RegisterModule(new FrameWorkModule(connectionString, migrationAssembley));
@@ -44,8 +44,8 @@ namespace DevskillSystem.web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connectionStringName = "DefaultConnection";
-            var connectionString = Configuration.GetConnectionString(connectionStringName);
+            var connectionStringName = "ConnectionStrings:DefaultConnection";
+            var connectionString = Configuration[connectionStringName];
             var migrationAssembly = typeof(Startup).Assembly.FullName;
             services.AddDbContext<FrameWorkContext>(options =>
                 options.UseSqlServer(connectionString,b => b.MigrationsAssembly(migrationAssembly)));

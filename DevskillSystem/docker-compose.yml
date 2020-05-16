@@ -1,0 +1,12 @@
+version: '3.4'
+services: 
+    web: 
+        build: 
+            context: .
+            dockerfile: Dockerfile
+        ports: 
+            - 8080:80
+        environment: 
+            - ConnectionStrings:DefaultConnection=Data Source=192.168.1.105,1433;Initial Catalog=DevSkillSystem;Integrated Security=False;User ID=SA;Password=Fahim@123;MultipleActiveResultSets=True;
+
+        

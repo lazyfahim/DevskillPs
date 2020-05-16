@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using DevSkillSystem.FrameWork;
@@ -37,6 +38,7 @@ namespace DevskillSystem.web.Models.TransactionModels
 
         public Transaction Get(int Id)
         {
+            Console.WriteLine();
             return _service.GetTransaction(Id);
         }
 
