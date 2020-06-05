@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B0jsup5LgykgC0WJkTEQ6BdKjeCEpjVSYBBylRTmmR7dN9a2gr6xn9ib83k9byErE1+k9mMJJVqvEYedwNwcDA==",
+  "dgSpecHash": "RgQC6nqF38rhOibcFPCwOr7Y7qhgke3fOEOAOTKyPx8+1QpT+VPoL80U3dxJ7bU9RWQqJ0BAHqlQtDie4na9gA==",
   "success": true,
-  "projectFilePath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Creational/BuilderExample.csproj",
+  "projectFilePath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/BuilderPattern/BuilderExample.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

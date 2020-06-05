@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/BuilderPattern/BuilderExample.csproj",
-      "projectName": "BuilderExample",
-      "projectPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/BuilderPattern/BuilderExample.csproj",
+      "projectUniqueName": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/SingletonePattern/SingleTonExample.csproj",
+      "projectName": "SingleTonExample",
+      "projectPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/SingletonePattern/SingleTonExample.csproj",
       "packagesPath": "/home/lazyfahim/.nuget/packages/",
-      "outputPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/BuilderPattern/obj/",
+      "outputPath": "/home/lazyfahim/Desktop/devskilSolve/DevskillPs/SingletonePattern/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/lazyfahim/.nuget/NuGet/NuGet.Config"
