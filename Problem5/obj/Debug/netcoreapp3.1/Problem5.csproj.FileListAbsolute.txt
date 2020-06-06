@@ -1,0 +1,13 @@
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/obj/Debug/netcoreapp3.1/Problem5.csprojAssemblyReference.cache
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/obj/Debug/netcoreapp3.1/Problem5.csproj.CoreCompileInputs.cache
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/obj/Debug/netcoreapp3.1/Problem5.AssemblyInfoInputs.cache
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/obj/Debug/netcoreapp3.1/Problem5.AssemblyInfo.cs
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/bin/Debug/netcoreapp3.1/Problem5
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/bin/Debug/netcoreapp3.1/Problem5.deps.json
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/bin/Debug/netcoreapp3.1/Problem5.runtimeconfig.json
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/bin/Debug/netcoreapp3.1/Problem5.runtimeconfig.dev.json
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/bin/Debug/netcoreapp3.1/Problem5.dll
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/bin/Debug/netcoreapp3.1/Problem5.pdb
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/obj/Debug/netcoreapp3.1/Problem5.dll
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/obj/Debug/netcoreapp3.1/Problem5.pdb
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/Problem5/obj/Debug/netcoreapp3.1/Problem5.genruntimeconfig.cache
