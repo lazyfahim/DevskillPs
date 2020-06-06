@@ -11,7 +11,7 @@ namespace Problem1
         static void Main(string[] args)
         {
 #if !ONLINE_JUDGE
-            Console.SetIn(File.OpenText("file.txt"));
+            //Console.SetIn(File.OpenText("file.txt"));
             //Console.SetOut(File.CreateText("out.txt"));
 #endif
             int n  = Int32.Parse(Console.ReadLine());
@@ -36,17 +36,17 @@ namespace Problem1
         public int Compare((string,int, string) people1,
             (string,int, string) people2)
         {
-            if ( people1.Item1.CompareTo(people2.Item1) > 0)
+            if ( people1.Item1.CompareTo(people2.Item1) < 0)
                 return -1;
-            else if ( people1.Item1.CompareTo(people2.Item1) < 0)
+            else if ( people1.Item1.CompareTo(people2.Item1) > 0)
                 return 1;
-            if (people1.Item2 > people2.Item2)
+            if (people1.Item2 < people2.Item2)
                 return 1;
-            else if(people1.Item2 < people2.Item2)
+            else if(people1.Item2 > people2.Item2)
                 return -1;
-            if ( people1.Item3.CompareTo(people2.Item3) > 0)
+            if ( people1.Item3.CompareTo(people2.Item3) < 0)
                 return -1;
-            else if (people1.Item3.CompareTo(people2.Item3) < 0)
+            else if (people1.Item3.CompareTo(people2.Item3) > 0)
                 return 1;
             else return 0;
         }
