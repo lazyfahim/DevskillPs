@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DevSkillSystem.FrameWork
 {
-    public class StudentUnitOfWork:UnitOfWork, IStudentUnitOfWork
+    public class StudentUnitOfWork:UnitOfWork, IStudentUnitOfWork    
     {
         public IStudentRepository StudentRepository { get; set; }
         public ISubjectRepository SubjectRepository { get; set; }

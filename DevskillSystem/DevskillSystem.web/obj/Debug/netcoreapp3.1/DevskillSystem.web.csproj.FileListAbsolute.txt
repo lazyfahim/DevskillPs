@@ -159,3 +159,5 @@
 /home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.web/obj/Debug/netcoreapp3.1/Razor/Views/Home/AddSubject.cshtml.g.cs
 /home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.web/obj/Debug/netcoreapp3.1/Razor/Views/Home/Subject.cshtml.g.cs
 /home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.web/obj/Debug/netcoreapp3.1/Razor/Views/Home/Subjects.cshtml.g.cs
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.web/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/home/lazyfahim/Desktop/devskilSolve/DevskillPs/DevskillSystem/DevskillSystem.web/bin/Debug/netcoreapp3.1/System.Net.WebSockets.WebSocketProtocol.dll
