@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using DevSkillSystem.FrameWork.Entities;
 
@@ -9,5 +10,7 @@ namespace DevSkillSystem.FrameWork.Services
         Notification Get(int id);
         void Seen(int id);
         void Dispose();
+        IList<NotificationQueue> NotificationToProcess();
+        void SendNotification(Action<NotificationQueue> notify,NotificationQueue notificationQueue);
     }
 }

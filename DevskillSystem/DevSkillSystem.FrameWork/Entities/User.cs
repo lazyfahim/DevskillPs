@@ -1,9 +1,10 @@
 using System.Collections.Generic;
+using DevskillSystem.data;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DevSkillSystem.FrameWork.Entities
 {
-    public class User:Entity
+    public class User:IEntity<int>
     {
         public User()
         {
@@ -14,5 +15,6 @@ namespace DevSkillSystem.FrameWork.Entities
 
         public virtual Employee Employee { get; set; }
         public ICollection<UserRole> UserRoles { get; set; }
+        public int Id { get; set; }
     }
 }

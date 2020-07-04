@@ -4,7 +4,7 @@ using DevSkillSystem.FrameWork.Entities;
 
 namespace DevSkillSystem.FrameWork.Services
 {
-    public class NotificationService:IDisposable, INotificationService
+    public class NotificationService:IDisposable,  INotificationService
     {
         private readonly INotificationUnitofWork _unitofWork;
 
@@ -38,14 +38,9 @@ namespace DevSkillSystem.FrameWork.Services
             return new List<NotificationQueue>();
         }
 
-        public void SendEmail(NotificationQueue queue)
+        public void SendNotification(Action<NotificationQueue> notify,NotificationQueue notificationQueue)
         {
-            
-        }
-
-        public void SendSMS(Notification queue)
-        {
-            
+            notify(notificationQueue);
         }
     }
 }
