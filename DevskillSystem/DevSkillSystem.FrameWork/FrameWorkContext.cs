@@ -1,3 +1,4 @@
+using DevSkillSystem.FrameWork.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace DevSkillSystem.FrameWork
@@ -7,8 +8,11 @@ namespace DevSkillSystem.FrameWork
         private string _connectionStringName;
         private string _migrationAssemblyName;
         
-        public DbSet<Student> Students { get; set; }
-        public DbSet<Subject> Subjects { get; set; } 
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<LeaveApplication> LeaveApplications { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
+        public DbSet<NotificationQueue> NotificationQueues { get; set; }
+        public DbSet<User> Users { get; set; }
         
         public FrameWorkContext(string connectionStringName, string migrationAssemblyName)
         {
