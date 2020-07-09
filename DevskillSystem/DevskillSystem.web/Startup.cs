@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using DevSkillSystem.FrameWork;
+using DevskillSystem.web.Areas.Identity.Data;
 using DevskillSystem.web.Models.TransactionModels;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -49,6 +51,13 @@ namespace DevskillSystem.web
             var migrationAssembly = typeof(Startup).Assembly.FullName;
             services.AddDbContext<FrameWorkContext>(options =>
                 options.UseSqlServer(connectionString,b => b.MigrationsAssembly(migrationAssembly)));
+            services.AddDbContext<IdentityDataContext>(options =>
+                options.UseSqlServer(connectionString));
+
+            services.AddDefaultIdentity<IdentityUser>(
+                    options => options.SignIn.RequireConfirmedAccount = false
+                    )
+                .AddEntityFrameworkStores<IdentityDataContext>();
             
             services.AddControllersWithViews();
             services.AddRazorPages();
@@ -74,7 +83,8 @@ namespace DevskillSystem.web
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -82,6 +92,7 @@ namespace DevskillSystem.web
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
         }
     }
