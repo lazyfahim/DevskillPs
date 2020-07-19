@@ -43,6 +43,8 @@ project.lock.json
 # Output folder used by Webpack or other FE stuff
 **/node_modules/*
 **/wwwroot/*
+**/obj/**
+**/bin/
 
 # SpecFlow specific
 *.feature.cs
