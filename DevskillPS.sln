@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayProj", "ArrayProj\Arra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CF96A", "CF96A\CF96A.csproj", "{09A9BBEB-63FB-4E30-9414-1F7B79FF1552}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CF281A", "CF281A\CF281A.csproj", "{DA1DEB10-FEC2-4102-AADB-606FD0944407}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{09A9BBEB-63FB-4E30-9414-1F7B79FF1552}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09A9BBEB-63FB-4E30-9414-1F7B79FF1552}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09A9BBEB-63FB-4E30-9414-1F7B79FF1552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA1DEB10-FEC2-4102-AADB-606FD0944407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1DEB10-FEC2-4102-AADB-606FD0944407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1DEB10-FEC2-4102-AADB-606FD0944407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1DEB10-FEC2-4102-AADB-606FD0944407}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
